@@ -41,7 +41,7 @@ var config = {
     ],
     "turnservers": []
 };
-var sockets = require('./medialooks-signaling-server');
+var sockets = require('./signaling-server');
 sockets.ListenSocket(express().listen(port), config);
 console.log('Signaling server running on port:', port);
 
