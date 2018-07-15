@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 });
 
 
-var port            = process.env.PORT || args[0] ||8888;
+var port            = process.env.PORT || args[0] || 8888;
 
 var config = {
     "isDev": true,
