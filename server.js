@@ -42,7 +42,7 @@ var config = {
     "turnservers": []
 };
 var sockets = require('./signaling-server');
-sockets.ListenSocket(express().listen(port), config);
+sockets.ListenSocket(app.listen(port), config);
 console.log('Signaling server running on port:', port);
 
 
